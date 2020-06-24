@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--------- CABEÇALHO ---------*/
+
+body header {
+    margin: 32px auto;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    align-items: center;
+}
+
+.menu a{
+    font-size: 16px;
+    font-family: 'Roboto-Regular';
+    margin-right: 15px;
+    color: #111111;
+}
+
+/*--------- Hero/apresentação ---------*/
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FBDFDB;
+    margin: 25px auto;
+    width: 940px;
+    height: 366px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.texts{
+    align-self: center;
+    width: 500px;
+    padding: 60px;
+}
+
+.texts h1{
+    font-size: 32px;
+    line-height: 38px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.texts p{
+    width: 316px;
+    color:  rgba(0,0,0,0.7);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.logo-chef{
+    width: 440px;
+}
+.logo-chef img{
+    width: 216px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*--------- Main ---------*/
+
+.main{
+    margin: 25px auto;
+    width: 940px;
+}
+
+.main h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.pratos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.img-lanche{
+    text-align: center;
+}
+
+.img-lanche img{
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+}
+
+.nome-lanche h2{
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.autor-lanche p{
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+/*--------- Footer ---------*/
+
+.direitos{
+    height: 62px;
+    background-color: #EEEEEE;
+    margin-top: 70px;
+}
+
+.direitos p{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    padding: 23px 0;
+    text-align: center;
+    margin: 0;
+}
+
+/*--------- Sobre ---------*/
+
+.texts-sobre{
+    width: 940px;
+    margin: 30px auto;
+}
+
+.text h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.text{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/*--------- Modal ---------*/
+
+.modal-overlay{
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    margin: 20vh auto auto auto;
+    position: relative;
+}
+
+.img-modal{
+    text-align: center;
+}
+.img-modal img{
+    width: 600px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.modal-lanche{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.modal-lanche h1{
+    font-size: 24px;
+}
+
+.modal-lanche p{
+    font-size: 18px;
+    color: #777777;
+}
+
+.modal-close{
+    width: 100%;
+    bottom: 35px;
+    position: absolute;
+    text-align: center;
+}
+
+.modal-close a{
+    cursor: pointer;
+    font-size: 16px;
+    color: #999999;
+}
+
+.modal-close a:hover{
+    border-bottom: 2px solid #999999;
+}
+
+/*--------- ModalActive ---------*/
+
+.modal-overlay.active{
+    transition: all 300ms;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/*--------- Receita ---------*/
+
+
+.imagem-receita img{
+    border-radius: 15px;
+    width: 940px;
+    height: 280px;
+}
+
+.titles{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titles h1{
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.titles p{
+    font-size: 20px;
+    color: #777777;
+    margin-top: -15px;
+}
+
+#ingredientes{
+    margin-top: 70px;
+}
+
+.cabecalho1{
+    display: grid;
+    grid-template-columns: 0.18fr 1fr;
+    align-items: center;
+}
+.cabecalho2{
+    display: grid;
+    grid-template-columns: 0.27fr 1fr;
+    align-items: center;
+}
+.cabecalho3{
+    display: grid;
+    grid-template-columns: 0.41fr 1fr;
+    align-items: center;
+}
+
+.cabecalho1 h1, .cabecalho1, .cabecalho3{
+    font-size: 24px;
+}
+.cabecalho1, .cabecalho2, .cabecalho3 a{
+    font-size: 12px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.info{
+    width: 940px;
+    margin: 15px 0;
+}
+.info ul{
+    margin-left: 15px;
+}
+.info ul li{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#info-adicionais p{
+    text-align: justify;
+}
+
+
+/*--------- Hidden ---------*/
+
+.info.hidden{
+    display: none;
+}
+
+/*index admin*/
+
+body header.admin{
+    background-color: #111111;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+}
+
+.logo a{
+    margin-left: 210px;
+}
+
+.adm{
+    margin-top: 32px;
+}
+
+.adm-menu{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho a{
+    background-color: tomato;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 6px;
+}
+
+.card-adm{
+    display: grid;
+    grid-template-columns: 172px 1fr;
+}
+
+.img-lancheAdm{
+    width: 172px;
+    height: 80px;
+}
+.img-lancheAdm img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.more{
+    position: relative;;
+    margin-left: 15px;
+}
+.nome-lancheAdm h2{
+    line-height: 21px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.autor-lancheAdm p{
+    color: #777777;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.more a{
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+}
+
+.menu-container{
+    width: 940px;
+    margin: 20px auto;
+}
+
+.titleAdm{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.titleAdm div button{
+    padding: 10px 10px;
+    background-color: tomato;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.titleAdm div button:last-child{
+    background-color: crimson;
+}
+
+.menu-container .btn{
+    width: 120px;
+    height: 20px;
+    padding: 8px 8px;
+    background-color: tomato;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.details-adm{
+    margin-bottom: 10px;
+}
+
+.item{
+    margin-top: 15px;
+}
+.item div{
+    margin-left: 3px;
+    font-size: 16px;
+    color: cornflowerblue;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.item:last-child div{
+    margin-bottom: none;
+}
+
+.item input, textarea{
+    width: 100%;
+    padding: 10px 2px;
+    outline: none;
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item input::placeholder{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.add-ingredient, .add-stap{
+    background-color: slategray;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 8px;
+    outline: none;
+}
+
+.btn0{
+    background-color: tomato;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "url_avatar": "https://images.unsplash.com/photo-1586594484587-7467bf5bea0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Daniel Alves Lopes",
+      "birth": "Tue Apr 14 2020 23:14:07 GMT-0300 (GMT-03:00)",
+      "email": "daniel@gmail.com",
+      "schoolyear": "6EF",
+      "workload": "4"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "url_avatar": "https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80",
+      "name": "tffnsnts",
+      "birth": 915148800000,
+      "schooling": "ES",
+      "type_class": "À Distância",
+      "acting": "Nursing",
+      "created_at": 1586310392469
+    },
+    {
+      "id": 2,
+      "url_avatar": "https://images.unsplash.com/photo-1503707663-64584849606b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Samuel Alves",
+      "birth": 978134400000,
+      "schooling": "ES",
+      "type_class": "Presencial",
+      "acting": "Web, Games, IA, Security",
+      "created_at": 1586716858457
+    },
+    {
+      "id": 3,
+      "url_avatar": "https://images.unsplash.com/photo-1524685794168-52985e79c1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80",
+      "name": "Daniel Alves",
+      "birth": 1210636800000,
+      "schooling": "M&D",
+      "type_class": "Presencial",
+      "acting": "Dormir, Jogar, Comer, Dormir",
+      "created_at": 1586737827411
+    }
+  ]
+}

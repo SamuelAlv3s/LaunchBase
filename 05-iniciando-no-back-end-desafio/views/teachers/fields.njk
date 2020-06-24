@@ -1,0 +1,51 @@
+<h3>Edit</h3>
+
+            <div class="item">
+                <div>Avatar</div>
+                <div>
+                    <input type="url" name="url_avatar" placeholder="https://"
+                    value="{{teacher.url_avatar}}">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Nome</div>
+                <div>
+                    <input type="text" name="name" placeholder="Nome completo"
+                    value="{{teacher.name}}">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Data de nascimento</div>
+                <div>
+                    <input type="date" name="birth" placeholder="Data de aniversário"
+                    value="{{teacher.birth}}">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Grau de escolaridade</div>
+                    <div>
+                    <select name="schooling">
+                        <option value="EM"{% if teacher.schooling == "EM" %}selected{% endif %}>Ensino Médio</option>
+                        <option value="ES" {% if teacher.schooling == "ES" %}selected{% endif %}>Ensino Superior</option>
+                        <option value="M&D" {% if teacher.schooling == "M&D" %}selected{% endif %}>Mestrado e Doutorado</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Tipo de aula</div>
+                <div>
+                    <span><input type="radio" name="type_class" value="Presencial" checked {% if teacher.type_class == "Presencial"%}checked{% endif %}>Presencial</span>
+                    <span><input type="radio" name="type_class" value="À Distância" {% if teacher.type_class == "À Distância"%}checked{% endif %}>À distância</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Área de atuação</div>
+                <div><input type="text" name="acting" placeholder="Use vírgula para separar" value="{{teacher.acting}}"></div>
+            </div>
+
+            <button type="submit">Salvar</button>

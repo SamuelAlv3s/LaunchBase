@@ -1,0 +1,64 @@
+{% extends 'admin/layout-admin.njk' %}
+
+{% block titles %}
+    <title>Receita</title>
+{%endblock titles%}
+
+{% block links %}
+    <link rel="stylesheet" href="/css/home/receita.css">
+{% endblock links %}
+
+{% block main%}
+
+    <div class="head">
+        <h2>Receita: {{recipe.title}}</h2>
+        <a href="/admin-recipes/edit/{{recipe.id}}" class="btn-admin">Editar receita</a>
+    </div>
+
+    <section>
+        <div class="cabecalho-receita">
+            <img src="{{recipe.image}}" alt="Imagem receita">
+            <div>
+                <p>{{recipe.title}}</p>
+                <span>{{recipe.chef_name}}</span>
+            </div>
+        </div>
+        <div class="receita-passo-a-passo">
+            <div class="blocks">
+                <h3>Ingredientes
+                    <span>Esconder</span></h3>
+                <div class="content">
+                    <ul>
+                        {% for ingredient in recipe.ingredients %}
+                        <li>{{ingredient}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+            <div class="blocks">
+                <h3>Modo de Preparo
+                    <span>Esconder</span></h3>
+                <div class="content">
+                    <ul>
+                        {% for preparatio in recipe.preparation %}
+                        <li>{{preparatio}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="blocks">
+                <h3>Informações adicionais
+                    <span>Esconder</span></h3>
+                <div class="content">
+                    <p>{{recipe.information}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock main%}
+
+{% block scripts %}
+    <script src="/scripts/script-hidden-receita.js"></script>
+{% endblock scripts %}

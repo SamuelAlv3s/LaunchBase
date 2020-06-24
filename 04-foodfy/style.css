@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--------- CABEÇALHO ---------*/
+
+body header{
+    margin: 32px auto;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    align-items: center;
+}
+
+.menu a{
+    font-size: 16px;
+    font-family: 'Roboto-Regular';
+    margin-right: 15px;
+    color: #111111;
+}
+
+/*--------- Hero/apresentação ---------*/
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FBDFDB;
+    margin: 25px auto;
+    width: 940px;
+    height: 366px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.texts{
+    align-self: center;
+    width: 500px;
+    padding: 60px;
+}
+
+.texts h1{
+    font-size: 32px;
+    line-height: 38px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.texts p{
+    width: 316px;
+    color:  rgba(0,0,0,0.7);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.logo-chef{
+    width: 440px;
+}
+.logo-chef img{
+    width: 216px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*--------- Main ---------*/
+
+.main{
+    margin: 25px auto;
+    width: 940px;
+}
+
+.main h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.pratos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.img-lanche{
+    text-align: center;
+}
+
+.img-lanche img{
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+}
+
+.nome-lanche h2{
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.autor-lanche p{
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+/*--------- Footer ---------*/
+
+.direitos{
+    height: 62px;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos p{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    
+}
+
+/*--------- Sobre ---------*/
+
+.texts-sobre{
+    width: 940px;
+    margin: 30px auto;
+}
+
+.text h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.text{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/*--------- Modal ---------*/
+
+.modal-overlay{
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    margin: 20vh auto auto auto;
+    position: relative;
+}
+
+.img-modal{
+    text-align: center;
+}
+.img-modal img{
+    width: 600px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.modal-lanche{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.modal-lanche h1{
+    font-size: 24px;
+}
+
+.modal-lanche p{
+    font-size: 18px;
+    color: #777777;
+}
+
+.modal-close{
+    width: 100%;
+    bottom: 35px;
+    position: absolute;
+    text-align: center;
+}
+
+.modal-close a{
+    cursor: pointer;
+    font-size: 16px;
+    color: #999999;
+}
+
+.modal-close a:hover{
+    border-bottom: 2px solid #999999;
+}
+
+/*--------- ModalActive ---------*/
+
+.modal-overlay.active{
+    transition: all 300ms;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}

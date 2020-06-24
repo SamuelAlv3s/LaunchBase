@@ -1,0 +1,29 @@
+{% extends 'home/layout-home.njk' %}
+
+{% block titles %}
+    <title>Chefs</title>
+{% endblock titles %}
+
+{% block links %}
+<link rel="stylesheet" href="/css/home/chefs.css">
+{% endblock links %}
+
+{% block main %}
+    <section class="chefs">
+        {% for chef in chefs %}
+        <div class="chef">
+            <img src="{{chef.avatar_url}}" alt="{{chef.name}}">
+            <div>
+                <p>{{chef.name}}</p>
+                {% if chef.total == 0 %}
+                <span>Nenhuma receita</span>
+                {% elif chef.total == 1%}
+                <span>{{chef.total}} Receita</span>
+                {% else %}
+                <span>{{chef.total}} Receitas</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+{% endblock main %}

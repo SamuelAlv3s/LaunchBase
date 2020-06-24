@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "tffnsnts",
+      "birth": 915148800000,
+      "gender": "F",
+      "email": "tffnsnts@gmail.com",
+      "blood": "A+",
+      "weigth": "55",
+      "heigth": "168"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+      "name": "Samuel Alves",
+      "birth": 978134400000,
+      "gender": "M",
+      "email": "samuelalves681@gmail.com",
+      "blood": "B-",
+      "weigth": "65",
+      "heigth": "177"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+      "name": "Parzival",
+      "birth": -462672000000,
+      "gender": "M",
+      "email": "nb0ss@gmail.com",
+      "blood": "A+",
+      "weigth": "300",
+      "heigth": "175"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1556816238-6c9caf68f140?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Daniel Alves Lopes",
+      "birth": 1210636800000,
+      "gender": "M",
+      "email": "danielalves@gmail.com",
+      "blood": "B+",
+      "weigth": "40",
+      "heigth": "130"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+      "name": "Samuel Alves",
+      "birth": 978134400000,
+      "gender": "M",
+      "services": "web, Games, etc",
+      "created_at": 1584924664976
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "tfnnsnts",
+      "birth": 915148800000,
+      "gender": "F",
+      "services": "aaaa, bbbb",
+      "created_at": 1584924807717
+    }
+  ]
+}

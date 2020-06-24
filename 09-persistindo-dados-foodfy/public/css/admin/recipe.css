@@ -1,0 +1,33 @@
+fieldset{
+    border: none;
+}
+
+.field label{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.field textarea,
+.field select,
+.field input{
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+}
+
+.field input::placeholder{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+fieldset .box-btn{
+    margin-bottom: 20px;
+}
+
+.box-btn .btn-add-stap,
+.box-btn .btn-add-ingredient{
+    cursor: pointer;
+}

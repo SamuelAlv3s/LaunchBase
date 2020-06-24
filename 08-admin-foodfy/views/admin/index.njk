@@ -1,0 +1,35 @@
+{% extends "admin/layout.njk"%}
+
+{% block content %}
+    <section class="adm">
+        <div class="cabecalho">
+            <h2>Gerenciar Receitas</h2>
+            <a href="admin/create">Criar Nova Receita</a>
+        </div>
+        <div class="adm-menu">
+            {% for item in receitas %}
+                <div class="card-adm" id="{{loop.index0}}">
+
+                    <div class="img-lancheAdm">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                    </div>
+
+                    <div class="more">
+                        <div class="nome-lancheAdm">
+                            <h2>{{item.title}}</h2>
+                        </div>
+                        <div class="autor-lancheAdm">
+                            <p>por
+                                {{item.author}}</p>
+                        </div>
+                        <div>
+                            <a href="/admin/{{item.id}}">Visualizar</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

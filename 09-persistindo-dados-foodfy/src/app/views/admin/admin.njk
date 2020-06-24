@@ -1,0 +1,24 @@
+{% extends 'admin/layout-admin.njk' %}
+{% block titles %}
+    <title>Foodfy Admin</title>
+{%endblock titles%}
+
+{% block main %}
+    <div class="head">
+        <h2>Gerenciar Receitas</h2>
+        <a href="/admin-recipes/create" class="btn-admin">Criar Receita</a>
+    </div>
+
+    <section class="receitas">
+        {% for recipe in recipes %}
+        <div class="receita">
+            <img src="{{recipe.image}}" alt="recipe.title">
+            <div>
+                <p>{{recipe.title}}</p>
+                <span>{{recipe.chef_name}}</span>
+                <a href="/admin-recipes/recipe/{{recipe.id}}">Visualizar</a>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+{% endblock main %}

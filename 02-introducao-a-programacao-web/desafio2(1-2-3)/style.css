@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --color-rocket: #7159c1;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: rgb(146, 35, 250);
+}
+
+.header{
+    background-color: var(--color-rocket);
+    padding: 30px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu a{
+    margin-right: 30px;
+    color: white;
+}
+
+.menu a:hover{
+    color: purple;
+    transition: color, 400ms;
+}
+
+#wrapper{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#wrapper img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--color-rocket); ;
+}
+
+.informacoes{
+    text-align: center;
+    color: white;
+    min-height: 32vh;
+}
+
+.informacoes h1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.informacoes h2{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.lista{
+    max-width: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.lista li{
+    padding: 15px;
+    list-style: none;
+    background-color: purple;
+    border-radius: 10px;
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.lista li:hover{
+    color: rgb(255,255,255);
+}
+
+footer{
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+footer a{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+footer a:hover{
+    border-bottom: 2px solid purple;
+}
+
+/***** Conteudos *****/
+.cards{
+    background-color:black;
+    min-height: 80vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.s:hover{
+    border: 3px solid indigo;
+    transition: border 300ms;
+}
+.l:hover{
+    border: 3px solid orangered;
+    transition: border 300ms;
+}
+.g:hover{
+    border: 3px solid lime;
+    transition: border 300ms;
+}
+
+.card-img{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.info h1{
+    color: white;
+    margin: 50px 0;
+}
+
+.info h2{
+    color: white;
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+.price{
+    max-width: 200px;
+    margin: 25px auto;
+    background-color: var(--color-rocket);
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.price p{
+    color: white;
+    opacity: 0.8;
+}
+
+.end{
+    background-color: black;
+    padding: 20px;
+}
+
+/***** MODAL *****/
+.modal-overlay{
+    opacity: 0;
+    visibility: hidden;
+    background-color:rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modal .modal-full{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/**** MODAl ACTIVE ****/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 8%;
+}
+
+/**** MODAL FULL ****/
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+

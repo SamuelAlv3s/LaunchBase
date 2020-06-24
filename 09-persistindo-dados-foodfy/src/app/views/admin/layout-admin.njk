@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block titles %}
+            <title>Foodfy</title>
+        {%endblock titles%}
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/admin/admin.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+        {% block links %}{% endblock links %}
+    </head>
+    <body>
+
+        <header>
+            <div class="logo-e-menu">
+                <a href="/admin-recipes"><img src="/assets/white-logo.png" alt="Logo Foodfy"></a>
+                <ul>
+                    <li>
+                        <a href="/admin-recipes">Receitas</a>
+                    </li>
+                    <li>
+                        <a href="/admin-chefs">Chefs</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+
+            {% block main %}
+                
+            {% endblock main %}
+
+        </div>
+
+        {% block scripts %}{% endblock scripts %}
+        <script src="scripts/boldtext.js"></script>
+    </body>
+</html>
