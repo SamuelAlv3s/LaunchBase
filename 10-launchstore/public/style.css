@@ -119,6 +119,10 @@ section.form h3{
     margin-bottom: 16px;
 }
 
+form .fields{
+    margin-bottom: 64px;
+}
+
 form .item{
     margin-bottom: 16px;
 }
@@ -162,8 +166,22 @@ form .item textarea{
     min-height: 150px;
 }
 
-form .fields{
-    margin-bottom: 64px;
+form .item span{
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
 }
 
 .button{
@@ -186,6 +204,22 @@ form .fields{
     align-self: flex-end;
 }
 
+.button.edit{
+    background-color: var(--secondary-color);
+}
+
+.button.delete{
+    background-color: lightgray;
+}
+
 .button:hover{
     background-color: #f78605;
+}
+
+.button.edit:hover{
+    background-color: #277ec5;
+}
+
+.button.delete:hover{
+    background-color: rgb(230, 76, 76);
 }
