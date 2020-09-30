@@ -1,0 +1,9 @@
+<div class="cards">
+    {%for recipe in recipes%}
+    <div class="card">
+        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+        <p>{{recipe.title}}</p>
+        <span>por {{recipe.chef_name}}</span>
+    </div>
+    {% endfor %}
+</div>

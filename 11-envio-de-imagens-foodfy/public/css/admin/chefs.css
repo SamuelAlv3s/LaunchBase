@@ -1,0 +1,48 @@
+.chefs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.chef{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.chef img{
+    width: 64px;
+    height: 64px;
+    border: 2px solid #DDDDDD;
+    border-radius: 50%;
+}
+
+.chef a{
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.perfil-chef{
+    margin: 30px 0 80px 0;
+    text-align: center;
+}
+
+.perfil-chef img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #DDDDDD;
+}
+
+.perfil-chef p{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.perfil-chef span{
+    font-size: 20px;
+    opacity: 0.7;
+}

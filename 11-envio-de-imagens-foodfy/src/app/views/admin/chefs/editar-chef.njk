@@ -1,0 +1,43 @@
+{% extends 'admin/layout-admin.njk' %}
+
+{% block titles %}
+    <title>Cadastrar chefs</title>
+{%endblock titles%}
+
+{% block links %}
+    <link rel="stylesheet" href="/css/admin/recipe.css">
+    <link rel="stylesheet" href="/css/admin/chefs.css">
+{% endblock links %}
+
+{% block main %}
+    <div class="head">
+        <h2>Editando Chef</h2>
+        <div>
+            <button form="delete" type="submit" class="btn-admin del">Deletar Chef</button>
+            <button form="editar-chef" type="submit" class="btn-admin">Salvar Chef</button>
+        </div>
+    </div>
+
+<form action="/admin-chefs?_method=put" method="post" id="editar-chef">
+    <fieldset>
+        <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" name="name" value="{{chef.name}}">
+        </div>
+        <div class="field">
+            <label for="avatar_url">Avatar</label>
+            <input type="text" name="avatar_url" value="{{chef.avatar_url}}">
+        </div>
+        <input type="hidden" name="id" value="{{chef.id}}">
+    </fieldset>
+</form>
+
+<form action="/admin-chefs?_method=delete" method="post" id="delete">
+    <input type="hidden" name="id" value="{{chef.id}}">
+</form>
+    
+{% endblock main %}
+
+{% block scripts %}
+    {% include 'admin/partials/confirm.njk' %}
+{% endblock scripts %}

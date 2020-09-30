@@ -1,0 +1,37 @@
+{% extends 'admin/layout-admin.njk' %}
+
+{% block titles %}
+    <title>Foodfy Chef</title>
+{%endblock titles%}
+
+{% block links %}
+    <link rel="stylesheet" href="/css/admin/chefs.css">
+{% endblock links %}
+
+{% block main %}
+
+    <div class="head">
+        <h2>Chef: {{chef.name}}</h2>
+        <a href="/admin-chefs/edit/{{chef.id}}" class="btn-admin">Editar chef</a>
+    </div>
+
+    <section class="perfil-chef">
+        <img src="{{chef.avatar_url}}" alt="avatar chef: {{chef.name}}">
+        <div>
+            <p>{{chef.name}}</p>
+            {% if chef.total == 0 %}
+            <span>Nenhuma Receita</span>
+            {% elif chef.total <= 1 %}
+            <span>{{chef.total}} Receita</span>
+            {% else %}
+            <span>{{chef.total}} Receitas</span>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="receitas">
+        {% include 'admin/partials/index-receitas.njk' %}
+    </section>
+
+    
+{% endblock main %}

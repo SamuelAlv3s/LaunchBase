@@ -1,0 +1,10 @@
+{% for recip in recipes %}
+<div class="receita">
+    <img src="{{recip.image}}" alt="{{recip.title}}">
+    <div>
+        <p>{{recip.title}}</p>
+        <span>{{recip.chef_name}}</span>
+        <a href="/admin-recipes/recipe/{{recip.id}}">Visualizar</a>
+    </div>
+</div>
+{% endfor %}

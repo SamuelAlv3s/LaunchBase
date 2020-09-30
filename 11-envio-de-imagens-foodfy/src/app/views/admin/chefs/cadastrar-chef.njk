@@ -1,0 +1,31 @@
+{% extends 'admin/layout-admin.njk' %}
+
+{% block titles %}
+    <title>Cadastrar chefs</title>
+{%endblock titles%}
+
+{% block links %}
+    <link rel="stylesheet" href="/css/admin/recipe.css">
+    <link rel="stylesheet" href="/css/admin/chefs.css">
+{% endblock links %}
+
+{% block main %}
+    <div class="head">
+        <h2>Criando Chef</h2>
+        <button form="cadastar-chef" class="btn-admin" type="submit">Salvar chef</button>
+    </div>
+
+<form action="/admin-chefs" method="post" id="cadastar-chef">
+    <fieldset>
+        <div class="field">
+            <label for="name">Nome</label>
+            <input type="text" name="name">
+        </div>
+        <div class="field">
+            <label for="avatar_url">Avatar</label>
+            <input type="text" name="avatar_url">
+        </div>
+    </fieldset>
+</form>
+    
+{% endblock main %}

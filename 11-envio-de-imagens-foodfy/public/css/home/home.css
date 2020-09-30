@@ -1,0 +1,179 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 62px;
+}
+
+.container{
+    width: 940px;
+    margin: 30px auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.logo-e-menu{
+    display: grid;
+    grid-template-columns: 90.6px 1fr;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.logo-e-menu ul{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo-e-menu li{
+    font-size: Roboto;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.logo-e-menu li:hover{
+    filter: brightness(0.3);
+}
+
+.logo-e-menu :last-child {
+    margin-right: 0;
+}
+
+.search{
+    justify-self: right;
+}
+
+.search form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.search input{
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.search button{
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.search button:hover{
+    filter: brightness(1.1);
+}
+
+.hero{
+    height: 366px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.slogan{
+    align-self: center;
+    width: 500px;
+    justify-self: center;
+}
+
+.slogan h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.slogan p{
+    width: 350px;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.imagem-mascote{
+    align-self: flex-end;
+}
+
+.main{
+    margin-top: 35px;
+}
+
+.main h3{
+    margin-bottom: 15px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+.card span{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+footer{
+    align-self: flex-end;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+footer p{
+    opacity: 0.7;
+}
+
+.sobre div{
+    margin-bottom: 30px;
+}
+
+.sobre h2{
+    margin-bottom: 15px;
+}
+
+.sobre p{
+    text-align: justify;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span,
+.pagination a{
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+.pagination a:last-child{
+    margin-right: 0;
+}
+
+.pagination span,
+.pagination a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}

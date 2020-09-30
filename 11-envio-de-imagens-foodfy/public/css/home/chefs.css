@@ -1,0 +1,30 @@
+.chefs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.chef{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.chef img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #f0f0f5;
+}
+
+.chef p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chef span{
+    font-size: 14px;
+    opacity: 0.7;
+}
+
